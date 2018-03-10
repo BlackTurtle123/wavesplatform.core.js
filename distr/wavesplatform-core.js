@@ -5151,7 +5151,7 @@ var OrderPrice = (function () {
             };
 
             self.validateAssetReissue = function (reissue) {
-                if (reissue.totalTokens.currency === Currency.WAVES) {
+                if (reissue.totalTokens.currency === Currency.TN) {
                     throw new Error('Reissuing TN is not allowed.');
                 }
 
@@ -5163,7 +5163,7 @@ var OrderPrice = (function () {
                     throw new Error('Transaction fee hasn\'t been set');
                 }
 
-                if (reissue.fee.currency !== Currency.WAVES) {
+                if (reissue.fee.currency !== Currency.TN) {
                     throw new Error('Transaction fee must be nominated in TN');
                 }
             };
