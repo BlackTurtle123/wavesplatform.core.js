@@ -694,10 +694,10 @@ var Currency = (function () {
         return this.displayName;
     };
 
-    var TurtleNode = new Currency({
+    var TN = new Currency({
         id: '',
-        displayName: 'TurtleNode',
-        shortName: 'TurtleNode',
+        displayName: 'TN',
+        shortName: 'TN',
         precision: 8,
         verified: true
     });
@@ -2296,7 +2296,7 @@ var Currency = (function () {
 
     var TN = new Currency({
         id: 'HxQSdHu1X4ZVXmJs232M6KfZi78FseeWaEXJczY6UxJ3',
-        displayName: 'TurtleNode',
+        displayName: 'TN',
         shortName: 'TN',
         precision: 2,
         verified: true
@@ -2333,7 +2333,7 @@ var Currency = (function () {
     function invalidateCache() {
         currencyCache = {};
 
-        currencyCache[TurtleNode.id] = TurtleNode;
+        currencyCache[TN.id] = TN;
         currencyCache[BTC.id] = BTC;
         currencyCache[BCC.id] = BCC;
         currencyCache[ETH.id] = ETH;
@@ -2556,7 +2556,7 @@ var Currency = (function () {
         },
         invalidateCache: invalidateCache,
         isCached: isCached,
-        TurtleNode: TurtleNode,
+        TN: TN,
         BTC: BTC,
         BCC: BCC,
         ETH: ETH,
@@ -2910,7 +2910,7 @@ Money.fromCoins = function (amount, currency) {
 };
 
 // set up decimal to format 0.00000001 as is instead of 1e-8
-Decimal.config({toExpNeg: -(Currency.TurtleNode.precision + 1)});
+Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
 
 
 (function() {
@@ -4435,8 +4435,8 @@ Decimal.config({toExpNeg: -(Currency.TurtleNode.precision + 1)});
                     case Currency.BTC.id:
                         return 'WBTC';
 
-                    case Currency.TurtleNode.id:
-                        return 'TurtleNode';
+                    case Currency.TN.id:
+                        return 'TN';
 
                     case Currency.ETH.id:
                         return 'WETH';
@@ -4464,8 +4464,8 @@ Decimal.config({toExpNeg: -(Currency.TurtleNode.precision + 1)});
                     case Currency.BTC.id:
                         return 'BTC';
 
-                    case Currency.TurtleNode.id:
-                        return 'TurtleNode';
+                    case Currency.TN.id:
+                        return 'TN';
 
                     case Currency.ETH.id:
                         return 'ETH';
@@ -4617,7 +4617,7 @@ Decimal.config({toExpNeg: -(Currency.TurtleNode.precision + 1)});
 (function () {
     'use strict';
 
-    var WAVES_ASSET_ID = 'TurtleNode',
+    var WAVES_ASSET_ID = 'TN',
         WAVES_PRECISION = 8;
 
     function denormalizeId(id) {
@@ -4760,7 +4760,7 @@ Decimal.config({toExpNeg: -(Currency.TurtleNode.precision + 1)});
         DEFAULT_LIMIT = 50;
 
     function serializeId(id) {
-        return id === '' ? 'TurtleNode' : id;
+        return id === '' ? 'TN' : id;
     }
 
     function DatafeedApiService(rest) {
@@ -5131,8 +5131,8 @@ var OrderPrice = (function () {
                     throw new Error('Token decimal places amount hasn\'t been set');
                 }
 
-                if (issue.fee.currency !== Currency.TurtleNode) {
-                    throw new Error('Transaction fee must be nominated in TurtleNode');
+                if (issue.fee.currency !== Currency.TN) {
+                    throw new Error('Transaction fee must be nominated in TN');
                 }
             };
 
@@ -5152,7 +5152,7 @@ var OrderPrice = (function () {
 
             self.validateAssetReissue = function (reissue) {
                 if (reissue.totalTokens.currency === Currency.WAVES) {
-                    throw new Error('Reissuing TurtleNode is not allowed.');
+                    throw new Error('Reissuing TN is not allowed.');
                 }
 
                 if (angular.isUndefined(reissue.totalTokens)) {
@@ -5164,7 +5164,7 @@ var OrderPrice = (function () {
                 }
 
                 if (reissue.fee.currency !== Currency.WAVES) {
-                    throw new Error('Transaction fee must be nominated in TurtleNode');
+                    throw new Error('Transaction fee must be nominated in TN');
                 }
             };
         });
