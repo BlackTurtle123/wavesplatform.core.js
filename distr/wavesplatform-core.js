@@ -694,10 +694,10 @@ var Currency = (function () {
         return this.displayName;
     };
 
-    var WAVES = new Currency({
+    var TurtleNode = new Currency({
         id: '',
-        displayName: 'Waves',
-        shortName: 'WAVES',
+        displayName: 'TurtleNode',
+        shortName: 'TurtleNode',
         precision: 8,
         verified: true
     });
@@ -2333,7 +2333,7 @@ var Currency = (function () {
     function invalidateCache() {
         currencyCache = {};
 
-        currencyCache[WAVES.id] = WAVES;
+        currencyCache[TurtleNode.id] = TurtleNode;
         currencyCache[BTC.id] = BTC;
         currencyCache[BCC.id] = BCC;
         currencyCache[ETH.id] = ETH;
@@ -2556,7 +2556,7 @@ var Currency = (function () {
         },
         invalidateCache: invalidateCache,
         isCached: isCached,
-        WAVES: WAVES,
+        TurtleNode: TurtleNode,
         BTC: BTC,
         BCC: BCC,
         ETH: ETH,
@@ -2910,7 +2910,7 @@ Money.fromCoins = function (amount, currency) {
 };
 
 // set up decimal to format 0.00000001 as is instead of 1e-8
-Decimal.config({toExpNeg: -(Currency.WAVES.precision + 1)});
+Decimal.config({toExpNeg: -(Currency.TurtleNode.precision + 1)});
 
 
 (function() {
@@ -4435,8 +4435,8 @@ Decimal.config({toExpNeg: -(Currency.WAVES.precision + 1)});
                     case Currency.BTC.id:
                         return 'WBTC';
 
-                    case Currency.WAVES.id:
-                        return 'WAVES';
+                    case Currency.TurtleNode.id:
+                        return 'TurtleNode';
 
                     case Currency.ETH.id:
                         return 'WETH';
@@ -4464,8 +4464,8 @@ Decimal.config({toExpNeg: -(Currency.WAVES.precision + 1)});
                     case Currency.BTC.id:
                         return 'BTC';
 
-                    case Currency.WAVES.id:
-                        return 'WAVES';
+                    case Currency.TurtleNode.id:
+                        return 'TurtleNode';
 
                     case Currency.ETH.id:
                         return 'ETH';
@@ -4617,7 +4617,7 @@ Decimal.config({toExpNeg: -(Currency.WAVES.precision + 1)});
 (function () {
     'use strict';
 
-    var WAVES_ASSET_ID = 'WAVES',
+    var WAVES_ASSET_ID = 'TurtleNode',
         WAVES_PRECISION = 8;
 
     function denormalizeId(id) {
@@ -4760,7 +4760,7 @@ Decimal.config({toExpNeg: -(Currency.WAVES.precision + 1)});
         DEFAULT_LIMIT = 50;
 
     function serializeId(id) {
-        return id === '' ? 'WAVES' : id;
+        return id === '' ? 'TurtleNode' : id;
     }
 
     function DatafeedApiService(rest) {
@@ -5131,8 +5131,8 @@ var OrderPrice = (function () {
                     throw new Error('Token decimal places amount hasn\'t been set');
                 }
 
-                if (issue.fee.currency !== Currency.WAVES) {
-                    throw new Error('Transaction fee must be nominated in Waves');
+                if (issue.fee.currency !== Currency.TurtleNode) {
+                    throw new Error('Transaction fee must be nominated in TurtleNode');
                 }
             };
 
@@ -5152,7 +5152,7 @@ var OrderPrice = (function () {
 
             self.validateAssetReissue = function (reissue) {
                 if (reissue.totalTokens.currency === Currency.WAVES) {
-                    throw new Error('Reissuing Waves is not allowed.');
+                    throw new Error('Reissuing TurtleNode is not allowed.');
                 }
 
                 if (angular.isUndefined(reissue.totalTokens)) {
@@ -5164,7 +5164,7 @@ var OrderPrice = (function () {
                 }
 
                 if (reissue.fee.currency !== Currency.WAVES) {
-                    throw new Error('Transaction fee must be nominated in Waves');
+                    throw new Error('Transaction fee must be nominated in TurtleNode');
                 }
             };
         });

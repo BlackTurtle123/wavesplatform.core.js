@@ -23,8 +23,8 @@ describe('Leasing.Request.Service', function() {
     }));
 
     it('should successfully sign start leasing request', function () {
-        var amount = Money.fromTokens(2, Currency.WAVES);
-        var fee = Money.fromTokens(0.01, Currency.WAVES);
+        var amount = Money.fromTokens(2, Currency.TN);
+        var fee = Money.fromTokens(0.01, Currency.TN);
         var startLeasing = {
             recipient: recipient,
             amount: amount,
@@ -43,8 +43,8 @@ describe('Leasing.Request.Service', function() {
     });
 
     it('should successfully sign start leasing request with an alias', function () {
-        var amount = Money.fromTokens(2, Currency.WAVES);
-        var fee = Money.fromTokens(0.01, Currency.WAVES);
+        var amount = Money.fromTokens(2, Currency.TN);
+        var fee = Money.fromTokens(0.01, Currency.TN);
         var startLeasing = {
             recipient: alias,
             amount: amount,

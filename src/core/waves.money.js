@@ -46,10 +46,10 @@ var Currency = (function () {
         return this.displayName;
     };
 
-    var WAVES = new Currency({
+    var TN = new Currency({
         id: '',
-        displayName: 'Waves',
-        shortName: 'WAVES',
+        displayName: 'TurtleNode',
+        shortName: 'TN',
         precision: 8,
         verified: true
     });
@@ -1685,7 +1685,7 @@ var Currency = (function () {
     function invalidateCache() {
         currencyCache = {};
 
-        currencyCache[WAVES.id] = WAVES;
+        currencyCache[TN.id] = TN;
         currencyCache[BTC.id] = BTC;
         currencyCache[BCC.id] = BCC;
         currencyCache[ETH.id] = ETH;
@@ -1908,7 +1908,7 @@ var Currency = (function () {
         },
         invalidateCache: invalidateCache,
         isCached: isCached,
-        WAVES: WAVES,
+        TN: TN,
         BTC: BTC,
         BCC: BCC,
         ETH: ETH,
