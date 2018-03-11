@@ -64,7 +64,7 @@ describe('Leasing.Request.Service', function() {
 
     it('should successfully sign cancel leasing request', function () {
         var startLeasingTransactionId = '4X85MhqxukwaPqJC4sSSeN3ptSYHbEca7KgiYtUa2ECX';
-        var fee = Money.fromTokens(0.1, Currency.WAVES);
+        var fee = Money.fromTokens(0.1, Currency.TN);
 
         var cancelLeasing = {
             startLeasingTransactionId: startLeasingTransactionId,

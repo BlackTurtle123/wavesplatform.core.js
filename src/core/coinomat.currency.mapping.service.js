@@ -18,8 +18,8 @@
                     case Currency.BTC.id:
                         return 'WBTC';
 
-                    case Currency.WAVES.id:
-                        return 'WAVES';
+                    case Currency.TN.id:
+                        return 'TN';
 
                     case Currency.ETH.id:
                         return 'WETH';
@@ -47,8 +47,8 @@
                     case Currency.BTC.id:
                         return 'BTC';
 
-                    case Currency.WAVES.id:
-                        return 'WAVES';
+                    case Currency.TN.id:
+                        return 'TN';
 
                     case Currency.ETH.id:
                         return 'ETH';
