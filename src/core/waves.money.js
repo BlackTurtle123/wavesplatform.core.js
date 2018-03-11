@@ -1646,14 +1646,6 @@ var Currency = (function () {
         verified: true
     });
 
-    var TN = new Currency({
-        id: 'HxQSdHu1X4ZVXmJs232M6KfZi78FseeWaEXJczY6UxJ3',
-        displayName: 'TurtleNode',
-        shortName: 'TN',
-        precision: 2,
-        verified: true
-    });
-
     var ENAN = new Currency({
         id: '53sxSVvj3PJkZhZKz6gLc5coXxAyC7zbgo5RtXfqRsym',
         displayName: 'eco-NAN',
@@ -1885,7 +1877,6 @@ var Currency = (function () {
         currencyCache[TDX.id] = TDX;
         currencyCache[InPay.id] = InPay;
         currencyCache[LIQUID.id] = LIQUID;
-        currencyCache[TN.id] = TN;
         currencyCache[ENAN.id] = ENAN;
         currencyCache[ContestCoin.id] = ContestCoin;
         currencyCache[SMQ.id] = SMQ;
@@ -2108,7 +2099,6 @@ var Currency = (function () {
         TDX: TDX,
         InPay: InPay,
         LIQUID: LIQUID,
-        TN: TN,
         ENAN: ENAN,
         ContestCoin: ContestCoin,
         SMQ: SMQ

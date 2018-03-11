@@ -44,7 +44,7 @@ describe('waves.money', function() {
         expect(Money.fromCoins(1000, Currency.TN).toTokens()).toEqual(0.00001000);
 
         var v = 0.00001234;
-        expect(Money.fromCoins(TNTokensToMoney(v).toCoins(), Currency.TN).toTokens()).toEqual(v);
+        expect(Money.fromCoins(wavesTokensToMoney(v).toCoins(), Currency.TN).toTokens()).toEqual(v);
 
         var stringValue = '0.001222222';
         var m = wavesTokensToMoney(stringValue);

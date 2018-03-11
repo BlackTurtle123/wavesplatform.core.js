@@ -696,7 +696,7 @@ var Currency = (function () {
 
     var TN = new Currency({
         id: '',
-        displayName: 'TN',
+        displayName: 'TurtleNode',
         shortName: 'TN',
         precision: 8,
         verified: true
