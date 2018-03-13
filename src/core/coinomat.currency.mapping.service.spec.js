@@ -15,12 +15,12 @@ describe('Coinomat.Currency.Mapping.Service', function() {
     });
 
     it('should return correct codes for bitcoin', function() {
-        expect(mappingService.platformCurrencyCode(Currency.BTC)).toEqual('WBTC');
-        expect(mappingService.gatewayCurrencyCode(Currency.BTC)).toEqual('BTC');
+        expect(mappingService.platformCurrencyCode(Currency.WAXEX)).toEqual('WAXEX');
+        expect(mappingService.gatewayCurrencyCode(Currency.WAXEX)).toEqual('WAXEX');
     });
 
-    it('should return correct codes for TN', function() {
-        expect(mappingService.gatewayCurrencyCode(Currency.TN)).toEqual('TN');
-        expect(mappingService.platformCurrencyCode(Currency.TN)).toEqual('TN');
-    });
+    // it('should return correct codes for TN', function() {
+    //     expect(mappingService.gatewayCurrencyCode(Currency.TN)).toEqual('TN');
+    //     expect(mappingService.platformCurrencyCode(Currency.TN)).toEqual('TN');
+    // });
 });

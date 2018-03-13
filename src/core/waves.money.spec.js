@@ -13,11 +13,11 @@ describe('waves.money', function() {
             precision: Currency.TN.precision
         });
         expect(c).toBe(Currency.TN);
-        expect(Currency.create({id: Currency.BTC.id})).toBe(Currency.BTC);
-        expect(Currency.create({id: Currency.UPC.id})).toBe(Currency.UPC);
-        expect(Currency.create({id: Currency.USD.id})).toBe(Currency.USD);
-        expect(Currency.create({id: Currency.EUR.id})).toBe(Currency.EUR);
-        expect(Currency.create({id: Currency.CNY.id})).toBe(Currency.CNY);
+        expect(Currency.create({id: Currency.WAXEX.id})).toBe(Currency.WAXEX);
+        // expect(Currency.create({id: Currency.UPC.id})).toBe(Currency.UPC);
+        // expect(Currency.create({id: Currency.USD.id})).toBe(Currency.USD);
+        // expect(Currency.create({id: Currency.EUR.id})).toBe(Currency.EUR);
+        // expect(Currency.create({id: Currency.CNY.id})).toBe(Currency.CNY);
     });
 
     it('converts predefined currency to string', function () {
@@ -64,10 +64,10 @@ describe('waves.money', function() {
         expect(m.formatAmount(false, false)).toEqual('12345.45698700');
         expect(m.formatAmount(true, true)).toEqual('12,345.456987');
 
-        m = Money.fromTokens(9000.005455990000, Currency.BTC);
+        m = Money.fromTokens(9000.005455990000, Currency.WAXEX);
         expect(m.formatAmount(true, false)).toEqual('9000.00545599');
 
-        m = Money.fromTokens(900.0052567600001, Currency.BTC);
+        m = Money.fromTokens(900.0052567600001, Currency.WAXEX);
         expect(m.formatAmount(true, false)).toEqual('900.00525676');
     });
 
@@ -102,7 +102,7 @@ describe('waves.money', function() {
 
     it('must throw an error when currencies are not the same', function () {
         var waves = wavesTokensToMoney(100);
-        var other = Money.fromTokens(10, Currency.BTC);
+        var other = Money.fromTokens(10, Currency.WAXEX);
 
         expect(function () {waves.greaterThan(other);}).toThrowError();
         expect(function () {waves.greaterThanOrEqualTo(other);}).toThrowError();
