@@ -28,7 +28,7 @@
         .module('waves.core.constants')
         .constant('constants.ui', {
             MINIMUM_PAYMENT_AMOUNT : 1e-8,
-            MINIMUM_TRANSACTION_FEE : 0.001,
+            MINIMUM_TRANSACTION_FEE : 0.02,
             AMOUNT_DECIMAL_PLACES : 8,
             JAVA_MAX_LONG: 9223372036854775807,
             MAXIMUM_ATTACHMENT_BYTE_SIZE: 140

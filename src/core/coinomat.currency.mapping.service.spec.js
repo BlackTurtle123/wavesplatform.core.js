@@ -15,8 +15,8 @@ describe('Coinomat.Currency.Mapping.Service', function() {
     });
 
     it('should return correct codes for bitcoin', function() {
-        expect(mappingService.platformCurrencyCode(Currency.WAXEX)).toEqual('WAXEX');
-        expect(mappingService.gatewayCurrencyCode(Currency.WAXEX)).toEqual('WAXEX');
+        expect(mappingService.platformCurrencyCode(Currency.TEST)).toEqual('TEST');
+        expect(mappingService.gatewayCurrencyCode(Currency.TEST)).toEqual('TEST');
     });
 
     // it('should return correct codes for TN', function() {

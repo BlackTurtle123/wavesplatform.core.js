@@ -13,7 +13,7 @@ describe('waves.money', function() {
             precision: Currency.TN.precision
         });
         expect(c).toBe(Currency.TN);
-        expect(Currency.create({id: Currency.WAXEX.id})).toBe(Currency.WAXEX);
+        expect(Currency.create({id: Currency.TEST.id})).toBe(Currency.TEST);
         // expect(Currency.create({id: Currency.UPC.id})).toBe(Currency.UPC);
         // expect(Currency.create({id: Currency.USD.id})).toBe(Currency.USD);
         // expect(Currency.create({id: Currency.EUR.id})).toBe(Currency.EUR);
@@ -64,11 +64,11 @@ describe('waves.money', function() {
         expect(m.formatAmount(false, false)).toEqual('12345.45698700');
         expect(m.formatAmount(true, true)).toEqual('12,345.456987');
 
-        m = Money.fromTokens(9000.005455990000, Currency.WAXEX);
-        expect(m.formatAmount(true, false)).toEqual('9000.00545599');
+        m = Money.fromTokens(9000.00, Currency.TEST);
+        expect(m.formatAmount(true, false)).toEqual('9000');
 
-        m = Money.fromTokens(900.0052567600001, Currency.WAXEX);
-        expect(m.formatAmount(true, false)).toEqual('900.00525676');
+        m = Money.fromTokens(900.52, Currency.TEST);
+        expect(m.formatAmount(true, false)).toEqual('900.52');
     });
 
     it('strips excess zeros after formatting', function () {
@@ -102,7 +102,7 @@ describe('waves.money', function() {
 
     it('must throw an error when currencies are not the same', function () {
         var waves = wavesTokensToMoney(100);
-        var other = Money.fromTokens(10, Currency.WAXEX);
+        var other = Money.fromTokens(10, Currency.TEST);
 
         expect(function () {waves.greaterThan(other);}).toThrowError();
         expect(function () {waves.greaterThanOrEqualTo(other);}).toThrowError();

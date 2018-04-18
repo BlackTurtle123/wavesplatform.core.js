@@ -54,11 +54,11 @@ var Currency = (function () {
         verified: true
     });
 
-    var WAXEX = new Currency({
-        id: ' ',
-        displayName: 'WAXEX',
-        shortName: 'WAXEX',
-        precision: 8,
+    var TEST = new Currency({
+        id: 'HDSpZtSRWjSavaWDoDWimsbdsAkQwT8EAhyPnKnTFTui',
+        displayName: 'TEST',
+        shortName: 'TEST',
+        precision: 2,
         verified: true
     });
 
@@ -70,7 +70,7 @@ var Currency = (function () {
         currencyCache = {};
 
         currencyCache[TN.id] = TN;
-        currencyCache[WAXEX.id] = WAXEX;
+        currencyCache[TEST.id] = TEST;
     }
 
     invalidateCache();
@@ -91,7 +91,7 @@ var Currency = (function () {
         invalidateCache: invalidateCache,
         isCached: isCached,
         TN: TN,
-        WAXEX: WAXEX
+        TEST: TEST
     };
 })();
 
