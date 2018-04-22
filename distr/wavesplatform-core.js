@@ -709,6 +709,37 @@ var Currency = (function () {
         precision: 2,
         verified: true
     });
+    var BTC = new Currency({
+        id: '3GvqjyJFBe1fpiYnGsmiZ1YJTkYiRktQ86M2KMzcTb2s',
+        displayName: 'Bitcoin',
+        shortName: 'BTC',
+        precision: 8,
+        verified: true
+    });
+
+    var HN = new Currency({
+        id: '3GvqjyJFBe1fpiYnGsmiZ1YJTkYiRktQ86M2KMzcTb2s',
+        displayName: 'Hellenic Node\n',
+        shortName: 'HN',
+        precision: 2,
+        verified: true
+    });
+
+    var LTC = new Currency({
+        id: '645yVRdW7V2NVHojniikpwQoZXu8PGBBMXZGyTys91YD',
+        displayName: 'Litecoin',
+        shortName: 'LTC',
+        precision: 8,
+        verified: true
+    });
+
+    var MN = new Currency({
+        id: 'DfutD8DdUhDphHoaMds2RQhw7oCmsf7W41s2zR5ZDq9F',
+        displayName: 'MapleNode',
+        shortName: 'MN',
+        precision: 0,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -719,6 +750,11 @@ var Currency = (function () {
 
         currencyCache[TN.id] = TN;
         currencyCache[TEST.id] = TEST;
+        currencyCache[BTC.id] = BTC;
+        currencyCache[HN.id] = HN;
+        currencyCache[LTC.id] = LTC;
+        currencyCache[MN.id] = MN;
+
     }
 
     invalidateCache();
