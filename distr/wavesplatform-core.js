@@ -740,6 +740,13 @@ var Currency = (function () {
         precision: 0,
         verified: true
     });
+    var NATA = new Currency({
+        id: '79jWQxTiV925jubY2c48vwJqVN2z1hU3rXX8uqdhuQnY',
+        displayName: 'NATA POINTS',
+        shortName: 'NATA',
+        precision: 2,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -754,6 +761,7 @@ var Currency = (function () {
         currencyCache[HN.id] = HN;
         currencyCache[LTC.id] = LTC;
         currencyCache[MN.id] = MN;
+        currencyCache[NATA.id] = NATA;
 
     }
 
@@ -779,7 +787,8 @@ var Currency = (function () {
         BTC: BTC,
         HN: HN,
         LTC: LTC,
-        MN: MN
+        MN: MN,
+        NATA: NATA
     };
 })();
 
