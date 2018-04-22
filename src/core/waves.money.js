@@ -127,7 +127,11 @@ var Currency = (function () {
         invalidateCache: invalidateCache,
         isCached: isCached,
         TN: TN,
-        TEST: TEST
+        TEST: TEST,
+        BTC: BTC,
+        HN: HN,
+        LTC: LTC,
+        MN: MN
     };
 })();
 
