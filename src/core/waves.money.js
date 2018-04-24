@@ -62,7 +62,7 @@ var Currency = (function () {
         verified: true
     });
     var BTC = new Currency({
-        id: '3GvqjyJFBe1fpiYnGsmiZ1YJTkYiRktQ86M2KMzcTb2s',
+        id: '5Asy9P3xjcvBAgbeyiitZhBRJZJ2TPGSZJz9ihDTnB3d',
         displayName: 'Bitcoin',
         shortName: 'BTC',
         precision: 8,
