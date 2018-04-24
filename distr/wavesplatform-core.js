@@ -726,7 +726,7 @@ var Currency = (function () {
     });
 
     var LTC = new Currency({
-        id: '645yVRdW7V2NVHojniikpwQoZXu8PGBBMXZGyTys91YD',
+        id: '3vB9hXHTCYbPiQNuyxCQgXF6AvFg51ozGKL9QkwoCwaS',
         displayName: 'Litecoin',
         shortName: 'LTC',
         precision: 8,
