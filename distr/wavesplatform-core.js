@@ -747,6 +747,20 @@ var Currency = (function () {
         precision: 2,
         verified: true
     });
+    var POL = new Currency({
+        id: 'DiBtP52GhwJrbwQCRTdiEmDmnS43UPb83rRJyCNFKhzZ',
+        displayName: 'POLTOKEN.PL',
+        shortName: 'POL',
+        precision: 8,
+        verified: true
+    });
+    var MAXIM = new Currency({
+        id: '4Y86aYfLX5feJay7F7KuPup7Uo4dew2r7NB6XRLLgaDe',
+        displayName: 'MAXIM',
+        shortName: 'MXM',
+        precision: 8,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -762,6 +776,8 @@ var Currency = (function () {
         currencyCache[LTC.id] = LTC;
         currencyCache[MN.id] = MN;
         currencyCache[NATA.id] = NATA;
+        currencyCache[POL.id] = POL;
+        currencyCache[MAXIM.id] = MAXIM;
 
     }
 
@@ -788,7 +804,9 @@ var Currency = (function () {
         HN: HN,
         LTC: LTC,
         MN: MN,
-        NATA: NATA
+        NATA: NATA,
+        POL: POL,
+        MAXIM: MAXIM
     };
 })();
 
