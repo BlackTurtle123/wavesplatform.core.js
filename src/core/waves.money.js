@@ -113,6 +113,13 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
+    var CWV = new Currency({
+        id: 'gkLVV56jMqhCS9A2SJKowgcx9YySgstZXGjtQCoxJD8',
+        displayName: 'Cryptowave',
+        shortName: 'CWV',
+        precision: 3,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -130,6 +137,7 @@ var Currency = (function () {
         currencyCache[NATA.id] = NATA;
         currencyCache[POL.id] = POL;
         currencyCache[MAXIM.id] = MAXIM;
+        currencyCache[CWV.id] = CWV;
 
     }
 
@@ -158,7 +166,8 @@ var Currency = (function () {
         MN: MN,
         NATA: NATA,
         POL: POL,
-        MAXIM: MAXIM
+        MAXIM: MAXIM,
+        CWV: CWV
     };
 })();
 
