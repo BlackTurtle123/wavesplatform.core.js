@@ -120,6 +120,13 @@ var Currency = (function () {
         precision: 3,
         verified: true
     });
+    var EURO = new Currency({
+        id: 'Esm7giMGN5TwNDAeasmrEJJMXmrbcizyTDevf1Qmnn9F',
+        displayName: 'EURO',
+        shortName: 'EUR',
+        precision: 2,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -138,6 +145,7 @@ var Currency = (function () {
         currencyCache[POL.id] = POL;
         currencyCache[MAXIM.id] = MAXIM;
         currencyCache[CWV.id] = CWV;
+        currencyCache[EURO.id] = EURO;
 
     }
 
@@ -167,7 +175,8 @@ var Currency = (function () {
         NATA: NATA,
         POL: POL,
         MAXIM: MAXIM,
-        CWV: CWV
+        CWV: CWV,
+        EURO: EURO
     };
 })();
 
