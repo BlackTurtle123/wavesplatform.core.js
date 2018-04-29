@@ -768,6 +768,34 @@ var Currency = (function () {
         precision: 3,
         verified: true
     });
+    var EURO = new Currency({
+        id: 'Esm7giMGN5TwNDAeasmrEJJMXmrbcizyTDevf1Qmnn9F',
+        displayName: 'EURO',
+        shortName: 'EUR',
+        precision: 2,
+        verified: true
+    });
+    var WAVES = new Currency({
+        id: 'EzwaF58ssALcUCZ9FbyeD1GTSteoZAQZEDTqBAXHfq8y',
+        displayName: 'WAVES',
+        shortName: 'WAVES',
+        precision: 8,
+        verified: true
+    });
+    var TAN = new Currency({
+        id: '8SPSfMDoMCCUFZjVBQZpnspYdxCjj8Z4vuo7iaBj6Gbd',
+        displayName: 'TeAuNo',
+        shortName: 'TAN',
+        precision: 8,
+        verified: true
+    });
+    var PDN = new Currency({
+        id: '7pAxzBTL4HZjTmSvDXRPwsGXhxwPtd41vY9Wp7GFFL4q',
+        displayName: 'POSEIDON',
+        shortName: 'PDN',
+        precision: 0,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -786,6 +814,10 @@ var Currency = (function () {
         currencyCache[POL.id] = POL;
         currencyCache[MAXIM.id] = MAXIM;
         currencyCache[CWV.id] = CWV;
+        currencyCache[EURO.id] = EURO;
+        currencyCache[WAVES.id] = WAVES;
+        currencyCache[TAN.id] = TAN;
+        currencyCache[PDN.id] = PDN;
 
     }
 
@@ -815,7 +847,11 @@ var Currency = (function () {
         NATA: NATA,
         POL: POL,
         MAXIM: MAXIM,
-        CWV: CWV
+        CWV: CWV,
+        EURO: EURO,
+        WAVES: WAVES,
+        TAN: TAN,
+        PDN: PDN
     };
 })();
 
