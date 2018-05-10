@@ -107,7 +107,7 @@ var Currency = (function () {
         verified: true
     });
     var MAXIM = new Currency({
-        id: '4Y86aYfLX5feJay7F7KuPup7Uo4dew2r7NB6XRLLgaDe',
+        id: 'B5gHxDADo6Qj1t2BHB893kAivsZn6paWriSNgf7nDUVR',
         displayName: 'MAXIM',
         shortName: 'MXM',
         precision: 8,
