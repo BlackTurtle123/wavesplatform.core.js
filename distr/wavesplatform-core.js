@@ -796,6 +796,20 @@ var Currency = (function () {
         precision: 0,
         verified: true
     });
+    var SSYS = new Currency({
+        id: '7tC2ZukogadhvHUdKQyWJ2cbk6T1viTCFJMgevVeTY1Y ',
+        displayName: 'SuperSistem',
+        shortName: 'SSYS',
+        precision: 0,
+        verified: true
+    });
+    var DASH = new Currency({
+        id: 'A62sRG58HFbWUNvFoEEjX4U3txXKcLm11MXWWS429qpN ',
+        displayName: 'Dash',
+        shortName: 'DASH',
+        precision: 8,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -818,6 +832,8 @@ var Currency = (function () {
         currencyCache[WAVES.id] = WAVES;
         currencyCache[TAN.id] = TAN;
         currencyCache[PDN.id] = PDN;
+        currencyCache[SSYS.id] = SSYS;
+        currencyCache[DASH.id] = DASH;
 
     }
 
@@ -851,7 +867,9 @@ var Currency = (function () {
         EURO: EURO,
         WAVES: WAVES,
         TAN: TAN,
-        PDN: PDN
+        PDN: PDN,
+        SYSS: SSYS,
+        DASH: DASH
     };
 })();
 
