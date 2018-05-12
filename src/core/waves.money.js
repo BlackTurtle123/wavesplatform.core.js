@@ -149,14 +149,14 @@ var Currency = (function () {
         verified: true
     });
     var SSYS = new Currency({
-        id: '7tC2ZukogadhvHUdKQyWJ2cbk6T1viTCFJMgevVeTY1Y ',
+        id: '7tC2ZukogadhvHUdKQyWJ2cbk6T1viTCFJMgevVeTY1Y',
         displayName: 'SuperSistem',
         shortName: 'SSYS',
         precision: 0,
         verified: true
     });
     var DASH = new Currency({
-        id: 'A62sRG58HFbWUNvFoEEjX4U3txXKcLm11MXWWS429qpN ',
+        id: 'A62sRG58HFbWUNvFoEEjX4U3txXKcLm11MXWWS429qpN',
         displayName: 'Dash',
         shortName: 'DASH',
         precision: 8,
