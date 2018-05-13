@@ -162,6 +162,13 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
+    var WGR = new Currency({
+        id: '91NnG9iyUs3ZT3tqK1oQ3ddpgAkE7v5Kbcgp2hhnDhqd',
+        displayName: 'Wagerr',
+        shortName: 'WGR',
+        precision: 8,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -186,6 +193,7 @@ var Currency = (function () {
         currencyCache[PDN.id] = PDN;
         currencyCache[SSYS.id] = SSYS;
         currencyCache[DASH.id] = DASH;
+        currencyCache[WGR.id] = WGR;
 
     }
 
@@ -221,7 +229,8 @@ var Currency = (function () {
         TAN: TAN,
         PDN: PDN,
         SYSS: SSYS,
-        DASH: DASH
+        DASH: DASH,
+        WGR: WGR
     };
 })();
 
