@@ -169,6 +169,13 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
+    var NBX = new Currency({
+        id: '5Mt84bm9DjRCCV6rzvB5nzw8zvynQQ4xkUDfgLNmTnP1',
+        displayName: 'Noxbox',
+        shortName: 'NBX',
+        precision: 8,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -194,6 +201,7 @@ var Currency = (function () {
         currencyCache[SSYS.id] = SSYS;
         currencyCache[DASH.id] = DASH;
         currencyCache[WGR.id] = WGR;
+        currencyCache[NBX.id] = NBX;
 
     }
 
@@ -230,7 +238,8 @@ var Currency = (function () {
         PDN: PDN,
         SYSS: SSYS,
         DASH: DASH,
-        WGR: WGR
+        WGR: WGR,
+        NBX: NBX
     };
 })();
 
