@@ -824,6 +824,34 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
+    var MIR = new Currency({
+        id: '9PuQeQnhTHeHwa7YYGWpJZXJMWjCQZTeateRWVGJSvni',
+        displayName: 'mir.one',
+        shortName: 'MIR',
+        precision: 8,
+        verified: true
+    });
+    var FTX = new Currency({
+        id: '51awpt1CUDzSTmrbrNVGuwTFu3Fzg55TW7V4pcCsftME',
+        displayName: 'FortuneX',
+        shortName: 'FTX',
+        precision: 8,
+        verified: true
+    });
+    var NECH = new Currency({
+        id: 'DoWtNTpKNLj7XrWWonZZKzwG7VuyxaPeoEmGAtKFc7jF',
+        displayName: 'Network Cash',
+        shortName: 'NECH',
+        precision: 8,
+        verified: true
+    });
+    var VS = new Currency({
+        id: '8ZhJsedEfwtaepJm6b55hyhwH2PMz9Xm7YD5cyqjyzwS',
+        displayName: 'Versus',
+        shortName: 'VS',
+        precision: 8,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -850,6 +878,10 @@ var Currency = (function () {
         currencyCache[DASH.id] = DASH;
         currencyCache[WGR.id] = WGR;
         currencyCache[NBX.id] = NBX;
+        currencyCache[VS.id] = VS;
+        currencyCache[FTX.id] = FTX;
+        currencyCache[NECH.id] = NECH;
+        currencyCache[MIR.id] = MIR;
 
     }
 
@@ -887,7 +919,12 @@ var Currency = (function () {
         SYSS: SSYS,
         DASH: DASH,
         WGR: WGR,
-        NBX: NBX
+        NBX: NBX,
+        VS:VS,
+        FTX:FTX,
+        NECH:NECH,
+        MIR:MIR
+
     };
 })();
 
