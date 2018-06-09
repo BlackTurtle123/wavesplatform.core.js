@@ -268,7 +268,7 @@ var Currency = (function () {
         WAVES: WAVES,
         TAN: TAN,
         PDN: PDN,
-        SYSS: SSYS,
+        SSYS: SSYS,
         DASH: DASH,
         WGR: WGR,
         NBX: NBX,
