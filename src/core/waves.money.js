@@ -48,7 +48,7 @@ var Currency = (function () {
 
     var TN = new Currency({
         id: '',
-        displayName: 'TurtleNode',
+        displayName: 'TN',
         shortName: 'TN',
         precision: 8,
         verified: true
@@ -211,6 +211,20 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
+    var TES = new Currency({
+        id:'645yVRdW7V2NVHojniikpwQoZXu8PGBBMXZGyTys91YD',
+        displayName: 'Testudo',
+        shortName: 'TES',
+        precision: 8,
+        verified: true
+    });
+    var BTN = new Currency({
+        id:'ExbYSuz4DZwf9grp3K8s3CSbNtE9fob2DtTKgbLGFXsJ',
+        displayName: 'BoxiTurtleNode',
+        shortName: 'BTN',
+        precision: 3,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -242,6 +256,8 @@ var Currency = (function () {
         currencyCache[NECH.id] = NECH;
         currencyCache[MIR.id] = MIR;
         currencyCache[SYS.id] = SYS;
+        currencyCache[TES.id] = TES;
+        currencyCache[BTN.id] = BTN;
 
     }
 
@@ -284,7 +300,9 @@ var Currency = (function () {
         FTX:FTX,
         NECH:NECH,
         MIR:MIR,
-        SYS:SYS
+        SYS:SYS,
+        TES:TES,
+        BTN:BTN
 
     };
 })();
