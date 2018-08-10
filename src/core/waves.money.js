@@ -225,6 +225,13 @@ var Currency = (function () {
         precision: 3,
         verified: true
     });
+    var STR = new Currency({
+        id: '7dCsp292yVYsUvPekqvwWGy8yNAJe47VUyapstfb9HPp',
+        displayName: 'STARS',
+        shortName: 'STR',
+        precision: 8,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -258,6 +265,7 @@ var Currency = (function () {
         currencyCache[SYS.id] = SYS;
         currencyCache[TES.id] = TES;
         currencyCache[BTN.id] = BTN;
+        currencyCache[STR.id] = STR;
 
     }
 
@@ -302,7 +310,8 @@ var Currency = (function () {
         MIR:MIR,
         SYS:SYS,
         TES:TES,
-        BTN:BTN
+        BTN:BTN,
+        STR:STR
 
     };
 })();
