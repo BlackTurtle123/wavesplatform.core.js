@@ -873,10 +873,10 @@ var Currency = (function () {
         precision: 3,
         verified: true
     });
-    var STR = new Currency({
+    var STRS = new Currency({
         id: '7dCsp292yVYsUvPekqvwWGy8yNAJe47VUyapstfb9HPp',
         displayName: 'STARS',
-        shortName: 'STR',
+        shortName: 'STRS',
         precision: 8,
         verified: true
     });
@@ -913,7 +913,7 @@ var Currency = (function () {
         currencyCache[SYS.id] = SYS;
         currencyCache[TES.id] = TES;
         currencyCache[BTN.id] = BTN;
-        currencyCache[STR.id] = STR;
+        currencyCache[STRS.id] = STRS;
 
     }
 
@@ -959,7 +959,7 @@ var Currency = (function () {
         SYS:SYS,
         TES:TES,
         BTN:BTN,
-        STR:STR
+        STRS:STRS
 
     };
 })();
