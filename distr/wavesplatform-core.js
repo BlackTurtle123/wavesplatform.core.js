@@ -761,13 +761,6 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
-    var CWV = new Currency({
-        id: 'gkLVV56jMqhCS9A2SJKowgcx9YySgstZXGjtQCoxJD8',
-        displayName: 'Cryptowave',
-        shortName: 'CWV',
-        precision: 3,
-        verified: true
-    });
     var EURO = new Currency({
         id: 'Esm7giMGN5TwNDAeasmrEJJMXmrbcizyTDevf1Qmnn9F',
         displayName: 'EURO',
@@ -880,17 +873,17 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
-    var DOGE = new Currency({
-        id: 'HDeemVktm2Z68RMkyA7AexhpaCqot1By7adBzaN9j5Xg',
-        displayName: 'DogeCoin',
-        shortName: 'DOGE',
-        precision: 8,
-        verified: true
-    });
     var BCH = new Currency({
         id: 'Fr2kNhe7XR3E16W7Mfh7NhNcsQWLXx3hSLjoFgpbFsNj',
         displayName: 'BitcoinCash',
         shortName: 'BCH',
+        precision: 8,
+        verified: true
+    });
+    var DOGE = new Currency({
+        id: 'HDeemVktm2Z68RMkyA7AexhpaCqot1By7adBzaN9j5Xg',
+        displayName: 'DogeCoin',
+        shortName: 'DOGE',
         precision: 8,
         verified: true
     });
@@ -911,7 +904,6 @@ var Currency = (function () {
         currencyCache[NATA.id] = NATA;
         currencyCache[POL.id] = POL;
         currencyCache[MAXIM.id] = MAXIM;
-        currencyCache[CWV.id] = CWV;
         currencyCache[EURO.id] = EURO;
         currencyCache[WAVES.id] = WAVES;
         currencyCache[TAN.id] = TAN;
@@ -959,7 +951,6 @@ var Currency = (function () {
         NATA: NATA,
         POL: POL,
         MAXIM: MAXIM,
-        CWV: CWV,
         EURO: EURO,
         WAVES: WAVES,
         TAN: TAN,
