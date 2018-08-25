@@ -880,6 +880,20 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
+    var DOGE = new Currency({
+        id: 'HDeemVktm2Z68RMkyA7AexhpaCqot1By7adBzaN9j5Xg',
+        displayName: 'DogeCoin',
+        shortName: 'DOGE',
+        precision: 8,
+        verified: true
+    });
+    var BCH = new Currency({
+        id: 'Fr2kNhe7XR3E16W7Mfh7NhNcsQWLXx3hSLjoFgpbFsNj',
+        displayName: 'BitcoinCash',
+        shortName: 'BCH',
+        precision: 8,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -914,6 +928,8 @@ var Currency = (function () {
         currencyCache[TES.id] = TES;
         currencyCache[BTN.id] = BTN;
         currencyCache[STRS.id] = STRS;
+        currencyCache[BCH.id] = BCH;
+        currencyCache[DOGE.id] = DOGE;
 
     }
 
@@ -959,7 +975,9 @@ var Currency = (function () {
         SYS:SYS,
         TES:TES,
         BTN:BTN,
-        STRS:STRS
+        STRS:STRS,
+        BCH:BCH,
+        DOGE:DOGE
 
     };
 })();
