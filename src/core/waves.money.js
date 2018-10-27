@@ -239,6 +239,27 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
+    var VIR = new Currency({
+        id: '6w5Qx34ZJRSfobG7snHyCH46RhPPLnHGPBZX7MZb8T8f',
+        displayName: 'Viral Reward Token',
+        shortName: 'VIR',
+        precision: 8,
+        verified: true
+    });
+    var SCOM = new Currency({
+        id: 'bqs5DvxtTTN3kPQV95q4vjKFSRBcXEsFPuZgvhYkZC5',
+        displayName: 'SCommunity',
+        shortName: 'SCOM',
+        precision: 2,
+        verified: true
+    });
+    var DUT = new Currency({
+        id: '6DL8Pq4PSLwdzvbcKcvJXuu6PSLSK1NyGnG488Vqm4iG',
+        displayName: 'DIUTO TOKEN\n',
+        shortName: 'DUT',
+        precision: 2,
+        verified: true
+    });
 
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
@@ -274,6 +295,9 @@ var Currency = (function () {
         currencyCache[STRS.id] = STRS;
         currencyCache[BCH.id] = BCH;
         currencyCache[DOGE.id] = DOGE;
+        currencyCache[VIR.id] = VIR;
+        currencyCache[SCOM.id] = SCOM;
+        currencyCache[DUT.id] = DUT;
 
     }
 
@@ -320,7 +344,10 @@ var Currency = (function () {
         BTN:BTN,
         STRS:STRS,
         BCH:BCH,
-        DOGE:DOGE
+        DOGE:DOGE,
+        VIR:VIR,
+        SCOM:SCOM,
+        DUT:DUT
 
     };
 })();
