@@ -255,9 +255,16 @@ var Currency = (function () {
     });
     var DUT = new Currency({
         id: '6DL8Pq4PSLwdzvbcKcvJXuu6PSLSK1NyGnG488Vqm4iG',
-        displayName: 'DIUTO TOKEN\n',
+        displayName: 'DIUTO TOKEN',
         shortName: 'DUT',
         precision: 2,
+        verified: true
+    });
+    var ETH = new Currency({
+        id: '6Mh41byVWPg8JVCfuwG5CAPCh9Q7gnuaAVxjDfVNDmcD',
+        displayName: 'Ethereum',
+        shortName: 'ETH',
+        precision: 8,
         verified: true
     });
 
@@ -298,6 +305,7 @@ var Currency = (function () {
         currencyCache[VIR.id] = VIR;
         currencyCache[SCOM.id] = SCOM;
         currencyCache[DUT.id] = DUT;
+        currencyCache[ETH.id] = ETH;
 
     }
 
@@ -347,7 +355,8 @@ var Currency = (function () {
         DOGE:DOGE,
         VIR:VIR,
         SCOM:SCOM,
-        DUT:DUT
+        DUT:DUT,
+        ETH:ETH
 
     };
 })();
