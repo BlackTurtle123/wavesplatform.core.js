@@ -92,13 +92,6 @@ var Currency = (function () {
         precision: 0,
         verified: true
     });
-    var NATA = new Currency({
-        id: '79jWQxTiV925jubY2c48vwJqVN2z1hU3rXX8uqdhuQnY',
-        displayName: 'NATA POINTS',
-        shortName: 'NATA',
-        precision: 2,
-        verified: true
-    });
     var POL = new Currency({
         id: 'DiBtP52GhwJrbwQCRTdiEmDmnS43UPb83rRJyCNFKhzZ',
         displayName: 'POLTOKEN.PL',
@@ -281,7 +274,7 @@ var Currency = (function () {
         currencyCache[HN.id] = HN;
         currencyCache[LTC.id] = LTC;
         currencyCache[MN.id] = MN;
-        currencyCache[NATA.id] = NATA;
+
         currencyCache[POL.id] = POL;
         currencyCache[MAXIM.id] = MAXIM;
         currencyCache[EURO.id] = EURO;
@@ -332,7 +325,6 @@ var Currency = (function () {
         HN: HN,
         LTC: LTC,
         MN: MN,
-        NATA: NATA,
         POL: POL,
         MAXIM: MAXIM,
         EURO: EURO,
