@@ -53,14 +53,6 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
-
-    var TEST = new Currency({
-        id: 'HDSpZtSRWjSavaWDoDWimsbdsAkQwT8EAhyPnKnTFTui',
-        displayName: 'TEST',
-        shortName: 'TEST',
-        precision: 2,
-        verified: true
-    });
     var BTC = new Currency({
         id: '5Asy9P3xjcvBAgbeyiitZhBRJZJ2TPGSZJz9ihDTnB3d',
         displayName: 'Bitcoin',
@@ -90,13 +82,6 @@ var Currency = (function () {
         displayName: 'MapleNode',
         shortName: 'MN',
         precision: 0,
-        verified: true
-    });
-    var POL = new Currency({
-        id: 'DiBtP52GhwJrbwQCRTdiEmDmnS43UPb83rRJyCNFKhzZ',
-        displayName: 'POLTOKEN.PL',
-        shortName: 'POL',
-        precision: 8,
         verified: true
     });
     var MAXIM = new Currency({
@@ -159,13 +144,6 @@ var Currency = (function () {
         id: '5Mt84bm9DjRCCV6rzvB5nzw8zvynQQ4xkUDfgLNmTnP1',
         displayName: 'Noxbox',
         shortName: 'NBX',
-        precision: 8,
-        verified: true
-    });
-    var MIR = new Currency({
-        id: '9PuQeQnhTHeHwa7YYGWpJZXJMWjCQZTeateRWVGJSvni',
-        displayName: 'mir.one',
-        shortName: 'MIR',
         precision: 8,
         verified: true
     });
@@ -260,7 +238,13 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
-
+    var AFIN = new Currency({
+        id: 'A8jSBb33GztWpuCypUW9hJYPnTtJGZ7SDuSZfHCaeV49',
+        displayName: 'AFIN',
+        shortName: 'AFIN',
+        precision: 8,
+        verified: true
+    });
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
     }
@@ -269,13 +253,10 @@ var Currency = (function () {
         currencyCache = {};
 
         currencyCache[TN.id] = TN;
-        currencyCache[TEST.id] = TEST;
         currencyCache[BTC.id] = BTC;
         currencyCache[HN.id] = HN;
         currencyCache[LTC.id] = LTC;
         currencyCache[MN.id] = MN;
-
-        currencyCache[POL.id] = POL;
         currencyCache[MAXIM.id] = MAXIM;
         currencyCache[EURO.id] = EURO;
         currencyCache[WAVES.id] = WAVES;
@@ -288,7 +269,6 @@ var Currency = (function () {
         currencyCache[VS.id] = VS;
         currencyCache[FTX.id] = FTX;
         currencyCache[NECH.id] = NECH;
-        currencyCache[MIR.id] = MIR;
         currencyCache[SYS.id] = SYS;
         currencyCache[TES.id] = TES;
         currencyCache[BTN.id] = BTN;
@@ -299,6 +279,7 @@ var Currency = (function () {
         currencyCache[SCOM.id] = SCOM;
         currencyCache[DUT.id] = DUT;
         currencyCache[ETH.id] = ETH;
+        currencyCache[AFIN.id] = AFIN;
 
     }
 
@@ -320,12 +301,10 @@ var Currency = (function () {
         invalidateCache: invalidateCache,
         isCached: isCached,
         TN: TN,
-        TEST: TEST,
         BTC: BTC,
         HN: HN,
         LTC: LTC,
         MN: MN,
-        POL: POL,
         MAXIM: MAXIM,
         EURO: EURO,
         WAVES: WAVES,
@@ -338,7 +317,6 @@ var Currency = (function () {
         VS:VS,
         FTX:FTX,
         NECH:NECH,
-        MIR:MIR,
         SYS:SYS,
         TES:TES,
         BTN:BTN,
@@ -348,7 +326,8 @@ var Currency = (function () {
         VIR:VIR,
         SCOM:SCOM,
         DUT:DUT,
-        ETH:ETH
+        ETH:ETH,
+        AFIN:AFIN
 
     };
 })();

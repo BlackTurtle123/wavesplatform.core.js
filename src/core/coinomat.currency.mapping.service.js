@@ -15,8 +15,8 @@
              */
             this.platformCurrencyCode = function (currency) {
                 switch (currency.id) {
-                    case Currency.TEST.id:
-                        return 'TEST';
+                    case Currency.AFIN.id:
+                        return 'AFIN';
 
                     case Currency.TN.id:
                         return 'TN';
@@ -32,8 +32,8 @@
              */
             this.gatewayCurrencyCode = function (currency) {
                 switch (currency.id) {
-                    case Currency.TEST.id:
-                        return 'TEST';
+                    case Currency.AFIN.id:
+                        return 'AFIN';
 
                 }
 
