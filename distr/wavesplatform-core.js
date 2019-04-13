@@ -893,6 +893,13 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
+    var FREE = new Currency({
+        id: '4xUv25qFsjQ1Gd6oCmzU14FoPMSDXrwub5PbKRgETf97',
+        displayName: 'FREE',
+        shortName: 'FR',
+        precision: 8,
+        verified: true
+    });
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
     }
@@ -928,6 +935,7 @@ var Currency = (function () {
         currencyCache[DUT.id] = DUT;
         currencyCache[ETH.id] = ETH;
         currencyCache[AFIN.id] = AFIN;
+        currencyCache[FREE.id] = FREE;
 
     }
 
@@ -975,7 +983,8 @@ var Currency = (function () {
         SCOM:SCOM,
         DUT:DUT,
         ETH:ETH,
-        AFIN:AFIN
+        AFIN:AFIN,
+        FREE:FREE
 
     };
 })();
