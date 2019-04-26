@@ -20,8 +20,6 @@
             var activeLeasingApi = rest.all('leasing');
             this.leases = {
                 current: function (address) {
-                    console.log('apiservice');
-                    console.log(activeLeasingApi.one('active',address).getList());
                     return activeLeasingApi.one('active',address).getList();
                 }
             };
