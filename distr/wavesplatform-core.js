@@ -2045,8 +2045,8 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
             this.leases = {
                 current: function (address) {
                     console.log('apiservice');
-                    console.log(activeLeasingApi.one('active',address));
-                    return activeLeasingApi.one('active',address);
+                    console.log(activeLeasingApi.one('active',address).getList());
+                    return activeLeasingApi.one('active',address).getList();
                 }
             };
             var addressApi = rest.all('addresses');
