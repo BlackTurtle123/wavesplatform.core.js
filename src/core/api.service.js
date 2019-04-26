@@ -17,7 +17,14 @@
                     return blocksApi.one('seq', startHeight).all(endHeight).getList();
                 }
             };
-
+            var activeLeasingApi = rest.all('leasing');
+            this.leases = {
+                current: function (address) {
+                    console.log('apiservice');
+                    console.log(activeLeasingApi.one('active',address));
+                    return activeLeasingApi.one('active',address);
+                }
+            };
             var addressApi = rest.all('addresses');
             var consensusApi = rest.all('consensus');
             this.address = {
