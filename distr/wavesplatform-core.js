@@ -1198,7 +1198,11 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
             START_LEASING_TRANSACTION_TYPE: 8,
             CANCEL_LEASING_TRANSACTION_TYPE: 9,
             CREATE_ALIAS_TRANSACTION_TYPE: 10,
-            MASS_PAYMENT_TRANSACTION_TYPE: 11
+            MASS_PAYMENT_TRANSACTION_TYPE: 11,
+            DATA_TRANSACTION_TYPE: 12,
+            SCRIPT_TRANSFER_TRANSACTION_TYPE: 13,
+            SPONSOR_FEE_TRANSACTION_TYPE: 14,
+            ASSET_SCRIPT_TRANSACTION_TYPE: 15
         });
 })();
 
@@ -2044,8 +2048,6 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
             var activeLeasingApi = rest.all('leasing');
             this.leases = {
                 current: function (address) {
-                    console.log('apiservice');
-                    console.log(activeLeasingApi.one('active',address).getList());
                     return activeLeasingApi.one('active',address).getList();
                 }
             };
