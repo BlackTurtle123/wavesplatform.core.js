@@ -900,6 +900,13 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
+    var MLT = new Currency({
+        id: '7jcY6DDYsSo7NuZEAruWhrB5apebA2cERhrBx6RFk5tL',
+        displayName: 'MLT',
+        shortName: 'MLT',
+        precision: 6,
+        verified: true
+    });
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
     }
@@ -936,6 +943,7 @@ var Currency = (function () {
         currencyCache[ETH.id] = ETH;
         currencyCache[AFIN.id] = AFIN;
         currencyCache[FREE.id] = FREE;
+        currencyCache[MLT.id] = MLT;
 
     }
 
@@ -984,7 +992,8 @@ var Currency = (function () {
         DUT:DUT,
         ETH:ETH,
         AFIN:AFIN,
-        FREE:FREE
+        FREE:FREE,
+        MLT:MLT
 
     };
 })();
@@ -2044,8 +2053,6 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
             var activeLeasingApi = rest.all('leasing');
             this.leases = {
                 current: function (address) {
-                    console.log('apiservice');
-                    console.log(activeLeasingApi.one('active',address).getList());
                     return activeLeasingApi.one('active',address).getList();
                 }
             };
