@@ -259,6 +259,13 @@ var Currency = (function () {
         precision: 6,
         verified: true
     });
+    var KAME = new Currency({
+        id: '5Dy1qVUzEwq6WEUGMy7CkkkbmFuxb2RTBRfs4JKc5b88',
+        displayName: 'KAME',
+        shortName: 'KA',
+        precision: 8,
+        verified: true
+    });
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
     }
@@ -296,6 +303,7 @@ var Currency = (function () {
         currencyCache[AFIN.id] = AFIN;
         currencyCache[FREE.id] = FREE;
         currencyCache[MLT.id] = MLT;
+        currencyCache[KAME.id] = KAME;
 
     }
 
@@ -345,7 +353,8 @@ var Currency = (function () {
         ETH:ETH,
         AFIN:AFIN,
         FREE:FREE,
-        MLT:MLT
+        MLT:MLT,
+        KAME:KAME
 
     };
 })();

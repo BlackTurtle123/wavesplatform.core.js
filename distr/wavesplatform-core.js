@@ -907,6 +907,13 @@ var Currency = (function () {
         precision: 6,
         verified: true
     });
+    var KAME = new Currency({
+        id: '5Dy1qVUzEwq6WEUGMy7CkkkbmFuxb2RTBRfs4JKc5b88',
+        displayName: 'KAME',
+        shortName: 'KA',
+        precision: 8,
+        verified: true
+    });
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
     }
@@ -944,6 +951,7 @@ var Currency = (function () {
         currencyCache[AFIN.id] = AFIN;
         currencyCache[FREE.id] = FREE;
         currencyCache[MLT.id] = MLT;
+        currencyCache[KAME.id] = KAME;
 
     }
 
@@ -993,7 +1001,8 @@ var Currency = (function () {
         ETH:ETH,
         AFIN:AFIN,
         FREE:FREE,
-        MLT:MLT
+        MLT:MLT,
+        KAME:KAME
 
     };
 })();
@@ -1207,7 +1216,11 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
             START_LEASING_TRANSACTION_TYPE: 8,
             CANCEL_LEASING_TRANSACTION_TYPE: 9,
             CREATE_ALIAS_TRANSACTION_TYPE: 10,
-            MASS_PAYMENT_TRANSACTION_TYPE: 11
+            MASS_PAYMENT_TRANSACTION_TYPE: 11,
+            DATA_TRANSACTION_TYPE: 12,
+            SCRIPT_TRANSFER_TRANSACTION_TYPE: 13,
+            SPONSOR_FEE_TRANSACTION_TYPE: 14,
+            ASSET_SCRIPT_TRANSACTION_TYPE: 15
         });
 })();
 
