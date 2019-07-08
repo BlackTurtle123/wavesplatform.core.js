@@ -84,13 +84,6 @@ var Currency = (function () {
         precision: 0,
         verified: true
     });
-    var MAXIM = new Currency({
-        id: 'B5gHxDADo6Qj1t2BHB893kAivsZn6paWriSNgf7nDUVR',
-        displayName: 'MAXIM',
-        shortName: 'MXM',
-        precision: 8,
-        verified: true
-    });
     var EURO = new Currency({
         id: 'Esm7giMGN5TwNDAeasmrEJJMXmrbcizyTDevf1Qmnn9F',
         displayName: 'EURO',
@@ -110,13 +103,6 @@ var Currency = (function () {
         displayName: 'TeAuNo',
         shortName: 'TAN',
         precision: 8,
-        verified: true
-    });
-    var PDN = new Currency({
-        id: '7pAxzBTL4HZjTmSvDXRPwsGXhxwPtd41vY9Wp7GFFL4q',
-        displayName: 'POSEIDON',
-        shortName: 'PDN',
-        precision: 0,
         verified: true
     });
     var SSYS = new Currency({
@@ -154,31 +140,10 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
-    var NECH = new Currency({
-        id: 'DoWtNTpKNLj7XrWWonZZKzwG7VuyxaPeoEmGAtKFc7jF',
-        displayName: 'Network Cash',
-        shortName: 'NECH',
-        precision: 8,
-        verified: true
-    });
-    var VS = new Currency({
-        id: '8ZhJsedEfwtaepJm6b55hyhwH2PMz9Xm7YD5cyqjyzwS',
-        displayName: 'Versus',
-        shortName: 'VS',
-        precision: 8,
-        verified: true
-    });
     var SYS = new Currency({
         id: 'HBxBjymrCC8TuL8rwCLr2vakDEq4obqkMwYYPEZtTauA',
         displayName: 'Syscoin',
         shortName: 'SYS',
-        precision: 8,
-        verified: true
-    });
-    var TES = new Currency({
-        id:'645yVRdW7V2NVHojniikpwQoZXu8PGBBMXZGyTys91YD',
-        displayName: 'Testudo',
-        shortName: 'TES',
         precision: 8,
         verified: true
     });
@@ -207,13 +172,6 @@ var Currency = (function () {
         id: 'HDeemVktm2Z68RMkyA7AexhpaCqot1By7adBzaN9j5Xg',
         displayName: 'DogeCoin',
         shortName: 'DOGE',
-        precision: 8,
-        verified: true
-    });
-    var VIR = new Currency({
-        id: '6w5Qx34ZJRSfobG7snHyCH46RhPPLnHGPBZX7MZb8T8f',
-        displayName: 'Viral Reward Token',
-        shortName: 'VIR',
         precision: 8,
         verified: true
     });
@@ -278,25 +236,19 @@ var Currency = (function () {
         currencyCache[HN.id] = HN;
         currencyCache[LTC.id] = LTC;
         currencyCache[MN.id] = MN;
-        currencyCache[MAXIM.id] = MAXIM;
         currencyCache[EURO.id] = EURO;
         currencyCache[WAVES.id] = WAVES;
         currencyCache[TAN.id] = TAN;
-        currencyCache[PDN.id] = PDN;
         currencyCache[SSYS.id] = SSYS;
         currencyCache[DASH.id] = DASH;
         currencyCache[WGR.id] = WGR;
         currencyCache[NBX.id] = NBX;
-        currencyCache[VS.id] = VS;
         currencyCache[FTX.id] = FTX;
-        currencyCache[NECH.id] = NECH;
         currencyCache[SYS.id] = SYS;
-        currencyCache[TES.id] = TES;
         currencyCache[BTN.id] = BTN;
         currencyCache[STRS.id] = STRS;
         currencyCache[BCH.id] = BCH;
         currencyCache[DOGE.id] = DOGE;
-        currencyCache[VIR.id] = VIR;
         currencyCache[SCOM.id] = SCOM;
         currencyCache[DUT.id] = DUT;
         currencyCache[ETH.id] = ETH;
@@ -329,25 +281,19 @@ var Currency = (function () {
         HN: HN,
         LTC: LTC,
         MN: MN,
-        MAXIM: MAXIM,
         EURO: EURO,
         WAVES: WAVES,
         TAN: TAN,
-        PDN: PDN,
         SSYS: SSYS,
         DASH: DASH,
         WGR: WGR,
         NBX: NBX,
-        VS:VS,
         FTX:FTX,
-        NECH:NECH,
         SYS:SYS,
-        TES:TES,
         BTN:BTN,
         STRS:STRS,
         BCH:BCH,
         DOGE:DOGE,
-        VIR:VIR,
         SCOM:SCOM,
         DUT:DUT,
         ETH:ETH,
