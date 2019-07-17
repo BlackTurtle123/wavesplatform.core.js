@@ -49,8 +49,7 @@
                 fee: asset.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
                 signature: signature,
-                proofs: [signature],
-                version: 2
+                proofs: [signature]
 
             };
         };
@@ -91,7 +90,6 @@
                 senderPublicKey: sender.publicKey,
                 signature: signature,
                 proofs: [signature],
-                version: 2,
                 attachment: cryptoService.base58.encode(transfer.attachment)
             };
         };
@@ -127,8 +125,7 @@
                 fee: reissue.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
                 signature: signature,
-                proofs: [signature],
-                version: 2
+                proofs: [signature]
             };
         };
     }

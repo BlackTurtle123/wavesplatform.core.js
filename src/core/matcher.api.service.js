@@ -80,8 +80,7 @@
                 .get(sender.publicKey, {}, {
                     Timestamp: timestamp,
                     Signature: signature,
-                    proofs: [signature],
-                    version: 2
+                    proofs: [signature]
 
                 });
         };

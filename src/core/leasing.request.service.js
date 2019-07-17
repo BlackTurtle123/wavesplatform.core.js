@@ -30,8 +30,7 @@
                 fee: startLeasing.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
                 signature: signature,
-                proofs: [signature],
-                version: 2
+                proofs: [signature]
 
             };
         };
@@ -61,8 +60,7 @@
                 fee: cancelLeasing.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
                 signature: signature,
-                proofs: [signature],
-                version: 2
+                proofs: [signature]
             };
         };
     }

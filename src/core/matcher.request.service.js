@@ -45,8 +45,7 @@
                 matcherPublicKey: order.matcherKey,
                 senderPublicKey: sender.publicKey,
                 signature: signature,
-                proofs: [signature],
-                version: 2
+                proofs: [signature]
 
             };
         };
@@ -72,8 +71,7 @@
                 sender: sender.publicKey,
                 orderId: orderId,
                 signature: signature,
-                proofs: [signature],
-                version: 2
+                proofs: [signature]
             };
         };
     }
