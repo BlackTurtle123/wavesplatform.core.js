@@ -29,9 +29,7 @@
                 timestamp: startLeasing.time,
                 fee: startLeasing.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
-                signature: signature,
-                proofs: [signature]
-
+                signature: signature
             };
         };
 
@@ -59,8 +57,7 @@
                 timestamp: cancelLeasing.time,
                 fee: cancelLeasing.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
-                signature: signature,
-                proofs: [signature]
+                signature: signature
             };
         };
     }

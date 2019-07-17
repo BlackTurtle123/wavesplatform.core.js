@@ -48,9 +48,7 @@
                 timestamp: asset.time,
                 fee: asset.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
-                signature: signature,
-                proofs: [signature]
-
+                signature: signature
             };
         };
 
@@ -89,7 +87,6 @@
                 feeAssetId: transfer.fee.currency.id,
                 senderPublicKey: sender.publicKey,
                 signature: signature,
-                proofs: [signature],
                 attachment: cryptoService.base58.encode(transfer.attachment)
             };
         };
@@ -124,8 +121,7 @@
                 timestamp: reissue.time,
                 fee: reissue.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
-                signature: signature,
-                proofs: [signature]
+                signature: signature
             };
         };
     }

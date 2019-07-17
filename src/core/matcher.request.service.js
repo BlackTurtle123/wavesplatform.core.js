@@ -44,9 +44,7 @@
                 matcherFee: order.fee.toCoins(),
                 matcherPublicKey: order.matcherKey,
                 senderPublicKey: sender.publicKey,
-                signature: signature,
-                proofs: [signature]
-
+                signature: signature
             };
         };
 
@@ -70,8 +68,7 @@
             return {
                 sender: sender.publicKey,
                 orderId: orderId,
-                signature: signature,
-                proofs: [signature]
+                signature: signature
             };
         };
     }
