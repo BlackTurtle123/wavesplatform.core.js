@@ -79,7 +79,9 @@
                 .all('publicKey')
                 .get(sender.publicKey, {}, {
                     Timestamp: timestamp,
-                    Signature: signature
+                    Signature: signature,
+                    proofs: [signature]
+
                 });
         };
 

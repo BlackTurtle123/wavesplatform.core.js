@@ -1794,7 +1794,9 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
                 timestamp: asset.time,
                 fee: asset.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
-                signature: signature
+                signature: signature,
+                proofs: [signature]
+
             };
         };
 
@@ -1833,6 +1835,7 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
                 feeAssetId: transfer.fee.currency.id,
                 senderPublicKey: sender.publicKey,
                 signature: signature,
+                proofs: [signature],
                 attachment: cryptoService.base58.encode(transfer.attachment)
             };
         };
@@ -1867,7 +1870,8 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
                 timestamp: reissue.time,
                 fee: reissue.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
-                signature: signature
+                signature: signature,
+                proofs: [signature]
             };
         };
     }
@@ -1907,7 +1911,8 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
                 timestamp: alias.time,
                 fee: alias.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
-                signature: signature
+                signature: signature,
+                proofs: [signature]
             };
         };
     }
@@ -1950,7 +1955,9 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
                 timestamp: startLeasing.time,
                 fee: startLeasing.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
-                signature: signature
+                signature: signature,
+                proofs: [signature]
+
             };
         };
 
@@ -1978,7 +1985,8 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
                 timestamp: cancelLeasing.time,
                 fee: cancelLeasing.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
-                signature: signature
+                signature: signature,
+                proofs: [signature]
             };
         };
     }
@@ -2868,7 +2876,9 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
                 .all('publicKey')
                 .get(sender.publicKey, {}, {
                     Timestamp: timestamp,
-                    Signature: signature
+                    Signature: signature,
+                    proofs: [signature]
+
                 });
         };
 
@@ -3045,7 +3055,9 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
                 matcherFee: order.fee.toCoins(),
                 matcherPublicKey: order.matcherKey,
                 senderPublicKey: sender.publicKey,
-                signature: signature
+                signature: signature,
+                proofs: [signature]
+
             };
         };
 
@@ -3069,7 +3081,8 @@ Decimal.config({toExpNeg: -(Currency.TN.precision + 1)});
             return {
                 sender: sender.publicKey,
                 orderId: orderId,
-                signature: signature
+                signature: signature,
+                proofs: [signature]
             };
         };
     }

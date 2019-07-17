@@ -26,7 +26,8 @@
                 timestamp: alias.time,
                 fee: alias.fee.toCoins(),
                 senderPublicKey: sender.publicKey,
-                signature: signature
+                signature: signature,
+                proofs: [signature]
             };
         };
     }
