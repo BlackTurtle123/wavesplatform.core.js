@@ -154,13 +154,6 @@ var Currency = (function () {
         precision: 3,
         verified: true
     });
-    var STRS = new Currency({
-        id: '7dCsp292yVYsUvPekqvwWGy8yNAJe47VUyapstfb9HPp',
-        displayName: 'STARS',
-        shortName: 'STRS',
-        precision: 8,
-        verified: true
-    });
     var BCH = new Currency({
         id: 'Fr2kNhe7XR3E16W7Mfh7NhNcsQWLXx3hSLjoFgpbFsNj',
         displayName: 'BitcoinCash',
@@ -246,7 +239,6 @@ var Currency = (function () {
         currencyCache[FTX.id] = FTX;
         currencyCache[SYS.id] = SYS;
         currencyCache[BTN.id] = BTN;
-        currencyCache[STRS.id] = STRS;
         currencyCache[BCH.id] = BCH;
         currencyCache[DOGE.id] = DOGE;
         currencyCache[SCOM.id] = SCOM;
@@ -291,7 +283,6 @@ var Currency = (function () {
         FTX:FTX,
         SYS:SYS,
         BTN:BTN,
-        STRS:STRS,
         BCH:BCH,
         DOGE:DOGE,
         SCOM:SCOM,
