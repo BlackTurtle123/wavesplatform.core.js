@@ -156,14 +156,14 @@ var Currency = (function () {
     });
     var BCH = new Currency({
         id: 'Fr2kNhe7XR3E16W7Mfh7NhNcsQWLXx3hSLjoFgpbFsNj',
-        displayName: 'BitcoinCash',
+        displayName: 'BCH',
         shortName: 'BCH',
         precision: 8,
         verified: true
     });
     var DOGE = new Currency({
         id: 'HDeemVktm2Z68RMkyA7AexhpaCqot1By7adBzaN9j5Xg',
-        displayName: 'DogeCoin',
+        displayName: 'Doge',
         shortName: 'DOGE',
         precision: 8,
         verified: true
@@ -217,6 +217,13 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
+    var RECH = new Currency({
+        id: '2gnZKv6in2AKUWcwzJTvxMGxa2VxeDuCzgKJEAkpN5Km',
+        displayName: 'RE City House',
+        shortName: 'RECH',
+        precision: 8,
+        verified: true
+    });
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
     }
@@ -248,6 +255,7 @@ var Currency = (function () {
         currencyCache[FREE.id] = FREE;
         currencyCache[MLT.id] = MLT;
         currencyCache[KAME.id] = KAME;
+        currencyCache[RECH.id] = RECH;
 
     }
 
@@ -291,7 +299,8 @@ var Currency = (function () {
         AFIN:AFIN,
         FREE:FREE,
         MLT:MLT,
-        KAME:KAME
+        KAME:KAME,
+        RECH:RECH
 
     };
 })();
