@@ -175,13 +175,7 @@ var Currency = (function () {
         precision: 2,
         verified: true
     });
-    var DUT = new Currency({
-        id: '6DL8Pq4PSLwdzvbcKcvJXuu6PSLSK1NyGnG488Vqm4iG',
-        displayName: 'DIUTO TOKEN',
-        shortName: 'DUT',
-        precision: 2,
-        verified: true
-    });
+
     var ETH = new Currency({
         id: '6Mh41byVWPg8JVCfuwG5CAPCh9Q7gnuaAVxjDfVNDmcD',
         displayName: 'Ethereum',
@@ -249,7 +243,6 @@ var Currency = (function () {
         currencyCache[BCH.id] = BCH;
         currencyCache[DOGE.id] = DOGE;
         currencyCache[SCOM.id] = SCOM;
-        currencyCache[DUT.id] = DUT;
         currencyCache[ETH.id] = ETH;
         currencyCache[AFIN.id] = AFIN;
         currencyCache[FREE.id] = FREE;
@@ -294,7 +287,6 @@ var Currency = (function () {
         BCH:BCH,
         DOGE:DOGE,
         SCOM:SCOM,
-        DUT:DUT,
         ETH:ETH,
         AFIN:AFIN,
         FREE:FREE,
