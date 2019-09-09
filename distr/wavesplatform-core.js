@@ -781,13 +781,6 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
-    var FTX = new Currency({
-        id: '51awpt1CUDzSTmrbrNVGuwTFu3Fzg55TW7V4pcCsftME',
-        displayName: 'FortuneX',
-        shortName: 'FTX',
-        precision: 8,
-        verified: true
-    });
     var SYS = new Currency({
         id: 'HBxBjymrCC8TuL8rwCLr2vakDEq4obqkMwYYPEZtTauA',
         displayName: 'Syscoin',
@@ -885,7 +878,6 @@ var Currency = (function () {
         currencyCache[DASH.id] = DASH;
         currencyCache[WGR.id] = WGR;
         currencyCache[NBX.id] = NBX;
-        currencyCache[FTX.id] = FTX;
         currencyCache[SYS.id] = SYS;
         currencyCache[BTN.id] = BTN;
         currencyCache[BCH.id] = BCH;
@@ -929,7 +921,6 @@ var Currency = (function () {
         DASH: DASH,
         WGR: WGR,
         NBX: NBX,
-        FTX:FTX,
         SYS:SYS,
         BTN:BTN,
         BCH:BCH,
