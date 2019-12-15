@@ -176,13 +176,6 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
-    var AFIN = new Currency({
-        id: 'A8jSBb33GztWpuCypUW9hJYPnTtJGZ7SDuSZfHCaeV49',
-        displayName: 'AFIN',
-        shortName: 'AFIN',
-        precision: 8,
-        verified: true
-    });
     var FREE = new Currency({
         id: '4xUv25qFsjQ1Gd6oCmzU14FoPMSDXrwub5PbKRgETf97',
         displayName: 'FREE',
@@ -236,7 +229,6 @@ var Currency = (function () {
         currencyCache[DOGE.id] = DOGE;
         currencyCache[SCOM.id] = SCOM;
         currencyCache[ETH.id] = ETH;
-        currencyCache[AFIN.id] = AFIN;
         currencyCache[FREE.id] = FREE;
         currencyCache[MLT.id] = MLT;
         currencyCache[KAME.id] = KAME;
@@ -279,7 +271,6 @@ var Currency = (function () {
         DOGE:DOGE,
         SCOM:SCOM,
         ETH:ETH,
-        AFIN:AFIN,
         FREE:FREE,
         MLT:MLT,
         KAME:KAME,

@@ -13,7 +13,7 @@ describe('waves.money', function() {
             precision: Currency.TN.precision
         });
         expect(c).toBe(Currency.TN);
-        expect(Currency.create({id: Currency.AFIN.id})).toBe(Currency.AFIN);
+        expect(Currency.create({id: Currency.BTC.id})).toBe(Currency.BTC);
         // expect(Currency.create({id: Currency.UPC.id})).toBe(Currency.UPC);
         // expect(Currency.create({id: Currency.USD.id})).toBe(Currency.USD);
         // expect(Currency.create({id: Currency.EUR.id})).toBe(Currency.EUR);
@@ -64,10 +64,10 @@ describe('waves.money', function() {
         expect(m.formatAmount(false, false)).toEqual('12345.45698700');
         expect(m.formatAmount(true, true)).toEqual('12,345.456987');
 
-        m = Money.fromTokens(9000.00, Currency.AFIN);
+        m = Money.fromTokens(9000.00, Currency.BTC);
         expect(m.formatAmount(true, false)).toEqual('9000');
 
-        m = Money.fromTokens(900.52, Currency.AFIN);
+        m = Money.fromTokens(900.52, Currency.BTC);
         expect(m.formatAmount(true, false)).toEqual('900.52');
     });
 
@@ -102,7 +102,7 @@ describe('waves.money', function() {
 
     it('must throw an error when currencies are not the same', function () {
         var waves = wavesTokensToMoney(100);
-        var other = Money.fromTokens(10, Currency.AFIN);
+        var other = Money.fromTokens(10, Currency.BTC);
 
         expect(function () {waves.greaterThan(other);}).toThrowError();
         expect(function () {waves.greaterThanOrEqualTo(other);}).toThrowError();

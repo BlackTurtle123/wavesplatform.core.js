@@ -15,8 +15,8 @@ describe('Coinomat.Currency.Mapping.Service', function() {
     });
 
     it('should return correct codes for bitcoin', function() {
-        expect(mappingService.platformCurrencyCode(Currency.AFIN)).toEqual('AFIN');
-        expect(mappingService.gatewayCurrencyCode(Currency.AFIN)).toEqual('AFIN');
+        expect(mappingService.platformCurrencyCode(Currency.BTC)).toEqual('BTC');
+        expect(mappingService.gatewayCurrencyCode(Currency.BTC)).toEqual('BTC');
     });
 
     // it('should return correct codes for TN', function() {
