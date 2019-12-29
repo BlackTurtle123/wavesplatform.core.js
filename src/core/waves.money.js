@@ -204,6 +204,13 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
+    var TUSD = new Currency({
+        id: '2R7raH74LuuiCbJbcv3Aa7g14WY1vYPUGushCUJFwW1f',
+        displayName: 'TrueUSD',
+        shortName: 'TUSD',
+        precision: 8,
+        verified: true
+    });
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
     }
@@ -233,6 +240,7 @@ var Currency = (function () {
         currencyCache[MLT.id] = MLT;
         currencyCache[KAME.id] = KAME;
         currencyCache[RECH.id] = RECH;
+        currencyCache[TUSD.id] = TUSD;
 
     }
 
@@ -274,7 +282,8 @@ var Currency = (function () {
         FREE:FREE,
         MLT:MLT,
         KAME:KAME,
-        RECH:RECH
+        RECH:RECH,
+        TUSD:TUSD
 
     };
 })();
