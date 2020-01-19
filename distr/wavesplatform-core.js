@@ -842,7 +842,7 @@ var Currency = (function () {
         id: '3HFgaMssup9ssSL139sptsxc2EXLY3Qx5ykY7hf5LD2B',
         displayName: 'ArcaneLabs',
         shortName: 'ACL',
-        precision: 8,
+        precision: 2,
         verified: true
     });
     function isCached(assetId) {
