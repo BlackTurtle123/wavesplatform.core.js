@@ -98,13 +98,6 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
-    var TAN = new Currency({
-        id: '8SPSfMDoMCCUFZjVBQZpnspYdxCjj8Z4vuo7iaBj6Gbd',
-        displayName: 'TeAuNo',
-        shortName: 'TAN',
-        precision: 8,
-        verified: true
-    });
     var SSYS = new Currency({
         id: '7tC2ZukogadhvHUdKQyWJ2cbk6T1viTCFJMgevVeTY1Y',
         displayName: 'SuperSistem',
@@ -123,13 +116,6 @@ var Currency = (function () {
         id: '91NnG9iyUs3ZT3tqK1oQ3ddpgAkE7v5Kbcgp2hhnDhqd',
         displayName: 'Wagerr',
         shortName: 'WGR',
-        precision: 8,
-        verified: true
-    });
-    var NBX = new Currency({
-        id: '5Mt84bm9DjRCCV6rzvB5nzw8zvynQQ4xkUDfgLNmTnP1',
-        displayName: 'Noxbox',
-        shortName: 'NBX',
         precision: 8,
         verified: true
     });
@@ -173,13 +159,6 @@ var Currency = (function () {
         id: '6Mh41byVWPg8JVCfuwG5CAPCh9Q7gnuaAVxjDfVNDmcD',
         displayName: 'Ethereum',
         shortName: 'ETH',
-        precision: 8,
-        verified: true
-    });
-    var FREE = new Currency({
-        id: '4xUv25qFsjQ1Gd6oCmzU14FoPMSDXrwub5PbKRgETf97',
-        displayName: 'FREE',
-        shortName: 'FR',
         precision: 8,
         verified: true
     });
@@ -232,18 +211,15 @@ var Currency = (function () {
         currencyCache[MN.id] = MN;
         currencyCache[EURO.id] = EURO;
         currencyCache[WAVES.id] = WAVES;
-        currencyCache[TAN.id] = TAN;
         currencyCache[SSYS.id] = SSYS;
         currencyCache[DASH.id] = DASH;
         currencyCache[WGR.id] = WGR;
-        currencyCache[NBX.id] = NBX;
         currencyCache[SYS.id] = SYS;
         currencyCache[BTN.id] = BTN;
         currencyCache[BCH.id] = BCH;
         currencyCache[DOGE.id] = DOGE;
         currencyCache[SCOM.id] = SCOM;
         currencyCache[ETH.id] = ETH;
-        currencyCache[FREE.id] = FREE;
         currencyCache[MLT.id] = MLT;
         currencyCache[KAME.id] = KAME;
         currencyCache[RECH.id] = RECH;
@@ -276,18 +252,15 @@ var Currency = (function () {
         MN: MN,
         EURO: EURO,
         WAVES: WAVES,
-        TAN: TAN,
         SSYS: SSYS,
         DASH: DASH,
         WGR: WGR,
-        NBX: NBX,
         SYS:SYS,
         BTN:BTN,
         BCH:BCH,
         DOGE:DOGE,
         SCOM:SCOM,
         ETH:ETH,
-        FREE:FREE,
         MLT:MLT,
         KAME:KAME,
         RECH:RECH,
