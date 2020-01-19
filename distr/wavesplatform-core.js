@@ -859,6 +859,13 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
+    var ACL = new Currency({
+        id: '3HFgaMssup9ssSL139sptsxc2EXLY3Qx5ykY7hf5LD2B',
+        displayName: 'ArcaneLabs',
+        shortName: 'ACL',
+        precision: 8,
+        verified: true
+    });
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
     }
@@ -889,6 +896,7 @@ var Currency = (function () {
         currencyCache[KAME.id] = KAME;
         currencyCache[RECH.id] = RECH;
         currencyCache[TUSD.id] = TUSD;
+        currencyCache[ACL.id] = ACL;
 
     }
 
@@ -931,7 +939,8 @@ var Currency = (function () {
         MLT:MLT,
         KAME:KAME,
         RECH:RECH,
-        TUSD:TUSD
+        TUSD:TUSD,
+        ACL:ACL
 
     };
 })();
