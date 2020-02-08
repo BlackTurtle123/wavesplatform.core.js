@@ -845,6 +845,13 @@ var Currency = (function () {
         precision: 2,
         verified: true
     });
+    var ETHO = new Currency({
+        id: 'GzHRyYtdwvaGSkUC4i8d3Xzmsz9aXBWdrpMNszi6bcvR',
+        displayName: 'Ether-1',
+        shortName: 'ETHO',
+        precision: 8,
+        verified: true
+    });
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
     }
@@ -873,6 +880,7 @@ var Currency = (function () {
         currencyCache[RECH.id] = RECH;
         currencyCache[TUSD.id] = TUSD;
         currencyCache[ACL.id] = ACL;
+        currencyCache[ETHO.id] = ETHO;
 
     }
 
@@ -913,7 +921,8 @@ var Currency = (function () {
         KAME:KAME,
         RECH:RECH,
         TUSD:TUSD,
-        ACL:ACL
+        ACL:ACL,
+        ETHO:ETHO
 
     };
 })();
