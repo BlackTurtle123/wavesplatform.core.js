@@ -126,13 +126,6 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
-    var BTN = new Currency({
-        id:'ExbYSuz4DZwf9grp3K8s3CSbNtE9fob2DtTKgbLGFXsJ',
-        displayName: 'BoxiTurtleNode',
-        shortName: 'BTN',
-        precision: 3,
-        verified: true
-    });
     var BCH = new Currency({
         id: 'Fr2kNhe7XR3E16W7Mfh7NhNcsQWLXx3hSLjoFgpbFsNj',
         displayName: 'BCH',
@@ -169,13 +162,6 @@ var Currency = (function () {
         precision: 6,
         verified: true
     });
-    var KAME = new Currency({
-        id: '5Dy1qVUzEwq6WEUGMy7CkkkbmFuxb2RTBRfs4JKc5b88',
-        displayName: 'KAME',
-        shortName: 'KA',
-        precision: 8,
-        verified: true
-    });
     var RECH = new Currency({
         id: '2gnZKv6in2AKUWcwzJTvxMGxa2VxeDuCzgKJEAkpN5Km',
         displayName: 'RE City House',
@@ -204,6 +190,21 @@ var Currency = (function () {
         precision: 8,
         verified: true
     });
+    var SENT = new Currency({
+        id: 'AVJc3uYu8HdjQEx4rroaq6v4Xv4L1etG1tQPeuqs38Sf',
+        displayName: 'Sentinel',
+        shortName: 'SENT',
+        precision: 8,
+        verified: true
+    });
+    var ARRR = new Currency({
+        id: '9gTWnHstaAkhD7hEGBqNdgcAru5872d8Xf1QmoPrz5iz',
+        displayName: 'Pirate Chain',
+        shortName: 'ARRR',
+        precision: 8,
+        verified: true
+    });
+
     function isCached(assetId) {
         return currencyCache.hasOwnProperty(assetId);
     }
@@ -222,17 +223,17 @@ var Currency = (function () {
         currencyCache[DASH.id] = DASH;
         currencyCache[WGR.id] = WGR;
         currencyCache[SYS.id] = SYS;
-        currencyCache[BTN.id] = BTN;
         currencyCache[BCH.id] = BCH;
         currencyCache[DOGE.id] = DOGE;
         currencyCache[SCOM.id] = SCOM;
         currencyCache[ETH.id] = ETH;
         currencyCache[MLT.id] = MLT;
-        currencyCache[KAME.id] = KAME;
         currencyCache[RECH.id] = RECH;
         currencyCache[TUSD.id] = TUSD;
         currencyCache[ACL.id] = ACL;
         currencyCache[ETHO.id] = ETHO;
+        currencyCache[SENT.id] = SENT;
+        currencyCache[ARRR.id] = ARRR;
 
     }
 
@@ -264,17 +265,17 @@ var Currency = (function () {
         DASH: DASH,
         WGR: WGR,
         SYS:SYS,
-        BTN:BTN,
         BCH:BCH,
         DOGE:DOGE,
         SCOM:SCOM,
         ETH:ETH,
         MLT:MLT,
-        KAME:KAME,
         RECH:RECH,
         TUSD:TUSD,
         ACL:ACL,
-        ETHO:ETHO
+        ETHO:ETHO,
+        SENT:SENT,
+        ARRR:ARRR
 
     };
 })();
